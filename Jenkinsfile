@@ -27,9 +27,9 @@ pipeline {
          /* Final stage of build; Push the 
             docker image to our OCI private Registry*/
         steps {
-            sh "sudo docker login -u '<username>' -p '<OCIR-TOKEN>' <Region-Prefix-Name>"
-            sh "sudo docker tag customapp:1 <Region-Prefix-Name>/<your-tenancy-namespace>/customapp:custom"
-            sh 'sudo docker push <Region-Prefix-Name>/<your-tenancy-namespace>/customapp:custom'
+            sh "sudo docker login -u 'idqlpien6bjl/oracleidentitycloudservice/kartikshrikanthegde@gmail.com' -p ']H:imugr+0V<hQ4ZFoW>' iad.ocir.io"
+            sh "sudo docker tag customapp:1 iad.ocir.io/idqlpien6bjl/customapp:custom"
+            sh 'sudo docker push iad.ocir.io/idqlpien6bjl/customapp:custom'
             
            }
          } 
